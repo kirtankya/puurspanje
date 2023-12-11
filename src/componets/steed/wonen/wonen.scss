@@ -1,0 +1,123 @@
+@import "../../../sass/global.scss";
+
+.wonen-background {
+  padding: 60px;
+
+  .image-wonen {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .image-flex {
+      padding-top: 20px;
+      display: flex;
+      gap: 20px;
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  .text-wonen {
+    padding-top: 50px;
+
+    h2 {
+      @include font-24;
+      font-weight: 600;
+    }
+    p {
+      padding-top: 20px;
+      max-width: 640px;
+      @include font-16;
+    }
+    span {
+      display: block;
+      padding-top: 20px;
+      @include font-16;
+    }
+    ul {
+      li {
+        @include font-16;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wonen-background {
+    padding: 60px 40px;
+
+    .image-wonen {
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .image-flex {
+        padding-top: 20px;
+        display: flex;
+        gap: 10px;
+
+        img {
+          width: 49.5%;
+          max-height: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .wonen-background {
+    padding: 20px 40px;
+
+    .image-wonen {
+      overflow-x: auto;
+      display: flex;
+      gap: 20px;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .image-flex {
+        gap: 20px;
+        padding: 0px;
+
+        img {
+          width: 500px;
+          height: 400px;
+        }
+      }
+    }
+    .text-wonen {
+        width: 100%;
+      padding-top: 50px;
+
+      h2 {
+        @include font-24;
+        font-weight: 600;
+      }
+      p {
+        padding-top: 20px;
+        max-width: 640px;
+        @include font-16;
+      }
+      span {
+        display: block;
+        padding-top: 20px;
+        @include font-16;
+      }
+      ul {
+        li {
+          @include font-16;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

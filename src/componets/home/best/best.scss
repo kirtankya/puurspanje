@@ -1,0 +1,171 @@
+@import "../../../sass/global.scss";
+
+.best-background {
+  padding: 60px;
+
+  .flex-direction {
+    display: flex;
+    justify-content: space-between;
+
+    .text-4 {
+      h2 {
+        max-width: 500px;
+        font-weight: 600;
+        @include font-32;
+      }
+    }
+
+    .text-5 {
+      max-width: 560px;
+      @include font-16;
+    }
+  }
+
+  .text-6 {
+    margin-top: 50px;
+
+    h2 {
+      @include font-32;
+      font-weight: 500;
+    }
+  }
+  .flex-box {
+    width: 100%;
+    display: flex;
+    // justify-content: center;
+    gap: 20px;
+    .box-main {
+      width: 33%;
+      img {
+        margin-top: 30px;
+        width: 100%;
+      }
+      .text-7 {
+        p {
+          margin-top: 10px;
+          @include font-18;
+          font-weight: 500;
+        }
+        span {
+          @include font-16;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .best-background {
+    padding: 40px;
+
+    .flex-direction {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      .text-4 {
+        h2 {
+          max-width: 600px;
+          font-weight: 600;
+          @include font-20;
+        }
+      }
+
+      .text-5 {
+        max-width: 560px;
+        @include font-16;
+      }
+    }
+
+    .text-6 {
+      margin-top: 50px;
+
+      h2 {
+        @include font-32;
+        font-weight: 500;
+      }
+    }
+    .flex-box {
+      width: 100%;
+      display: flex;
+      // justify-content: center;
+      gap: 20px;
+      .box-main {
+        width: 33%;
+        img {
+          margin-top: 30px;
+          width: 100%;
+        }
+        .text-7 {
+          p {
+            margin-top: 10px;
+            @include font-18;
+            font-weight: 500;
+          }
+          span {
+            @include font-16;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .best-background {
+    padding: 40px 25px;
+
+    .flex-direction {
+      display: flex;
+      flex-wrap: wrap;
+      //   justify-content: space-between;
+      gap: 20px;
+
+      .text-4 {
+        h2 {
+          max-width: 600px;
+          font-weight: 600;
+          @include font-20;
+        }
+      }
+
+      .text-5 {
+        max-width: 560px;
+        @include font-16;
+      }
+    }
+
+    .text-6 {
+      margin-top: 50px;
+
+      h2 {
+        @include font-32;
+        font-weight: 500;
+      }
+    }
+    .flex-box {
+      // width: 600px;
+      display: flex;
+      // justify-content: center;
+      gap: 20px;
+      overflow-x: auto;
+      .box-main {
+        min-width: 300px;
+        img {
+          margin-top: 30px;
+          width: 100%;
+        }
+        .text-7 {
+          p {
+            margin-top: 10px;
+            @include font-18;
+            font-weight: 500;
+          }
+          span {
+            @include font-16;
+          }
+        }
+      }
+    }
+  }
+}

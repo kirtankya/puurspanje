@@ -1,0 +1,84 @@
+@import "../../../sass/global.scss";
+
+.regio-background {
+  padding: 60px;
+
+  .flex-regio {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--color-dark-gray);
+    h2 {
+      @include font-32;
+      font-weight: 600;
+    }
+    .text-regio {
+      p {
+        max-width: 560px;
+        @include font-16;
+      }
+      span {
+        padding-top: 10px;
+        display: block;
+        @include font-16;
+        max-width: 560px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .regio-background {
+    padding: 40px 20px;
+
+    .flex-regio {
+      display: flex;
+      justify-content: space-between;
+      h2 {
+        @include font-32;
+        font-weight: 600;
+      }
+      .text-regio {
+        p {
+          max-width: 560px;
+          @include font-16;
+        }
+        span {
+          padding-top: 10px;
+          display: block;
+          @include font-16;
+          max-width: 560px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .regio-background {
+    padding: 30px;
+
+    .flex-regio {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        @include font-32;
+        font-weight: 600;
+      }
+      .text-regio {
+        margin-top: 20px;
+        min-width: 100%;
+        p {
+          max-width: 560px;
+          @include font-16;
+        }
+        span {
+          padding-top: 10px;
+          display: block;
+          @include font-16;
+          max-width: 560px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@import "../../../sass/global.scss";
+
+.makelar-background {
+  padding: 100px 0px;
+
+  .flex-text {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      @include font-32;
+      font-weight: 600;
+    }
+
+    .text-makelar {
+      p {
+        max-width: 560px;
+        @include font-16;
+      }
+
+      span {
+        padding-top: 10px;
+        display: block;
+        @include font-16;
+        max-width: 560px;
+      }
+
+      .text-end {
+        p {
+          padding-top: 10px;
+          @include font-16;
+          color: var(--color-blue);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .makelar-background {
+    padding: 100px 40px;
+
+    .flex-text {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        @include font-32;
+        font-weight: 600;
+      }
+
+      .text-makelar {
+        p {
+          max-width: 560px;
+          @include font-16;
+        }
+
+        span {
+          padding-top: 10px;
+          display: block;
+          @include font-16;
+          max-width: 560px;
+        }
+
+        .text-end {
+          p {
+            padding-top: 10px;
+            @include font-16;
+            color: var(--color-blue);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .makelar-background {
+    padding: 100px 0px;
+    display: none;
+
+    .flex-text {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        @include font-32;
+        font-weight: 600;
+      }
+
+      .text-makelar {
+        p {
+          max-width: 560px;
+          @include font-16;
+        }
+
+        span {
+          padding-top: 10px;
+          display: block;
+          @include font-16;
+          max-width: 560px;
+        }
+
+        .text-end {
+          p {
+            padding-top: 10px;
+            @include font-16;
+            color: var(--color-blue);
+          }
+        }
+      }
+    }
+  }
+}

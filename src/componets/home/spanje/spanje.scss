@@ -1,0 +1,222 @@
+@import "../../../sass/global.scss";
+
+.spanje-background {
+  padding: 40px;
+
+  .flex-containe {
+    display: flex;
+    justify-content: space-between;
+
+    .text-1 {
+      h2 {
+        @include font-32;
+      }
+    }
+
+    .text-2 {
+      p {
+        @include font-16;
+        max-width: 560px;
+      }
+    }
+  }
+
+  .flex-main {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    .main-menu-1 {
+      width: 50%;
+
+      h2 {
+        margin-top: 20px;
+        @include font-24;
+        font-weight: 400;
+      }
+
+      .box-flex {
+        .box {
+          max-width: 100%;
+          padding-top: 20px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid var(--color-black);
+
+          .flex-m {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            img {
+              width: 200px;
+            }
+
+            span {
+              display: block;
+              @include font-16;
+              font-weight: 500;
+              padding-bottom: 10px;
+            }
+
+            p {
+              @include font-16;
+              max-width: 350px;
+            }
+          }
+          &:last-child{
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .spanje-background {
+    padding: 20px;
+
+    .flex-containe {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .text-1 {
+        h2 {
+          @include font-32;
+        }
+      }
+
+      .text-2 {
+        p {
+          padding-top: 20px;
+          @include font-16;
+          max-width: 560px;
+        }
+      }
+    }
+
+    .flex-main {
+      display: flex;
+      gap: 30px;
+      //   justify-content: space-between;
+
+      .main-menu-1 {
+        width: 50%;
+
+        h2 {
+          margin-top: 20px;
+          @include font-24;
+          font-weight: 400;
+        }
+
+        .box-flex {
+          .box {
+            max-width: 100%;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--color-black);
+
+            .flex-m {
+              display: flex;
+              gap: 20px;
+              align-items: center;
+
+              img {
+                width: 200px;
+              }
+
+              span {
+                display: block;
+                @include font-16;
+                font-weight: 500;
+                padding-bottom: 10px;
+              }
+
+              p {
+                @include font-16;
+                max-width: 350px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .spanje-background {
+    padding: 20px;
+
+    .flex-containe {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 20px;
+
+      .text-1 {
+        h2 {
+          @include font-20;
+        }
+      }
+
+      .text-2 {
+        p {
+          padding-top: 20px;
+          @include font-16;
+          max-width: 560px;
+        }
+      }
+    }
+
+    .flex-main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: space-between;
+
+      .main-menu-1 {
+        width: 100%;
+
+        h2 {
+          margin-top: 20px;
+          @include font-24;
+          font-weight: 400;
+        }
+
+        .box-flex {
+          .box {
+            max-width: 100%;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--color-black);
+
+            .flex-m {
+              display: flex;
+              gap: 20px;
+              align-items: center;
+
+              img {
+                width: 200px;
+              }
+
+              span {
+                display: block;
+                @include font-16;
+                font-weight: 500;
+                padding-bottom: 10px;
+              }
+
+              p {
+                @include font-16;
+                max-width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

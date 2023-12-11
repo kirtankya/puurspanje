@@ -1,0 +1,111 @@
+@import "../../../sass/global.scss";
+
+.warrom-background {
+  padding: 60px;
+
+  .text-main {
+    h2 {
+      max-width: 460px;
+      @include font-32;
+      font-weight: 500;
+    }
+  }
+
+  .flex-containe {
+    display: flex;
+    // justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+
+    .text-main-1 {
+      width: 100%;
+
+      p {
+        @include font-18;
+        font-weight: 600;
+      }
+
+      span {
+        margin-top: 10px;
+        display: block;
+        @include font-16;
+        max-width: 340px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .warrom-background {
+    padding: 40px 25px;
+
+    .text-main {
+      h2 {
+        max-width: 460px;
+        @include font-20;
+        font-weight: 500;
+      }
+    }
+
+    .flex-containe {
+      display: flex;
+      // justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+
+      .text-main-1 {
+        width: 100%;
+
+        p {
+          @include font-18;
+          font-weight: 600;
+        }
+
+        span {
+          margin-top: 10px;
+          display: block;
+          @include font-16;
+          max-width: 340px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .warrom-background {
+    padding: 40px 25px;
+
+    .text-main {
+      h2 {
+        max-width: 460px;
+        @include font-32;
+        font-weight: 500;
+      }
+    }
+
+    .flex-containe {
+      display: flex;
+      // justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+      overflow-x: auto;
+
+      .text-main-1 {
+        min-width: 70%;
+
+        p {
+          @include font-18;
+          font-weight: 600;
+        }
+
+        span {
+          margin-top: 10px;
+          display: block;
+          @include font-16;
+          max-width: 340px;
+        }
+      }
+    }
+  }
+}

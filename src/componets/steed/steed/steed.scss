@@ -1,0 +1,166 @@
+@import "../../../sass/global.scss";
+
+.details {
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid var(--border-color);
+
+  p {
+    @include font-16;
+    color: var(--color-dark-gray);
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+
+  span {
+    display: block;
+    @include font-16;
+    color: var(--color-dark-gray);
+  }
+}
+
+.steeds {
+  padding: 60px;
+  display: grid;
+  justify-content: center;
+
+  h2 {
+    max-width: 754px;
+    @include font-48;
+    // margin: 0 auto;
+  }
+
+  .flex-steed {
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    span {
+      //   text-align: center;
+      display: block;
+      @include font-16;
+      color: var(--color-dark-gray);
+    }
+  }
+  p {
+    padding-top: 10px;
+    max-width: 657px;
+    @include font-16;
+    color: var(--color-dark-gray);
+  }
+}
+
+@media (max-width: 768px) {
+  .details {
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid var(--border-color);
+
+    p {
+      @include font-16;
+      color: var(--color-dark-gray);
+    }
+
+    .icon {
+      font-size: 16px;
+    }
+
+    span {
+      display: block;
+      @include font-16;
+      color: var(--color-dark-gray);
+    }
+  }
+
+  .steeds {
+    padding: 40px;
+    display: grid;
+    justify-content: center;
+
+    h2 {
+      max-width: 754px;
+      @include font-48;
+      // margin: 0 auto;
+    }
+
+    .flex-steed {
+      padding-top: 20px;
+      display: flex;
+      gap: 20px;
+      span {
+        //   text-align: center;
+        display: block;
+        @include font-16;
+        color: var(--color-dark-gray);
+      }
+    }
+    p {
+      padding-top: 10px;
+      max-width: 657px;
+      @include font-16;
+      color: var(--color-dark-gray);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .details {
+    padding: 20px 40px;
+    display: flex;
+    // align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid var(--border-color);
+
+    p {
+      @include font-16;
+      color: var(--color-dark-gray);
+    }
+
+    .icon {
+      font-size: 16px;
+    }
+
+    span {
+      min-width: 80%;
+      display: block;
+      @include font-16;
+      color: var(--color-dark-gray);
+    }
+  }
+
+  .steeds {
+    padding: 40px 25px;
+    display: grid;
+    justify-content: center;
+
+    h2 {
+      max-width: 100%;
+      @include font-24;
+      font-weight: 600;
+      // margin: 0 auto;
+    }
+
+    .flex-steed {
+      padding-top: 20px;
+      display: flex;
+      gap: 20px;
+      span {
+        //   text-align: center;
+        display: block;
+        @include font-16;
+        color: var(--color-dark-gray);
+      }
+    }
+    p {
+      padding-top: 10px;
+      min-width: 100%;
+      @include font-16;
+      color: var(--color-dark-gray);
+    }
+  }
+}

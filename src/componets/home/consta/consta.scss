@@ -1,0 +1,131 @@
+@import "../../../sass/global.scss";
+
+.consta-background {
+  padding: 60px;
+  background-color: var(--background-color);
+
+  .text-consta {
+    h2 {
+      max-width: 400px;
+      @include font-32;
+      color: var(--font-color);
+    }
+  }
+
+  .flex-box {
+    display: flex;
+    gap: 20px;
+
+    .text-box {
+      width: 100%;
+      margin-top: 50px;
+
+      p {
+        @include font-18;
+        color: var(--font-color);
+      }
+
+      span {
+        padding-top: 20px;
+        max-width: 325px;
+        display: block;
+        color: var(--font-color);
+      }
+    }
+  }
+
+  p {
+    margin-top: 40px;
+    @include font-16;
+    color: var(--font-color);
+  }
+}
+
+@media (max-width: 768px) {
+  .consta-background {
+    padding: 40px 24px;
+    background-color: var(--background-color);
+
+    .text-consta {
+      h2 {
+        max-width: 400px;
+        @include font-32;
+        color: var(--font-color);
+      }
+    }
+
+    .flex-box {
+      display: flex;
+      gap: 20px;
+
+      .text-box {
+        width: 100%;
+        margin-top: 50px;
+
+        p {
+          @include font-18;
+          color: var(--font-color);
+        }
+
+        span {
+          padding-top: 20px;
+          max-width: 325px;
+          display: block;
+          color: var(--font-color);
+        }
+      }
+    }
+
+    p {
+      margin-top: 40px;
+      @include font-16;
+      color: var(--font-color);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  @media (max-width: 768px) {
+    .consta-background {
+      padding: 40px 24px;
+      background-color: var(--background-color);
+
+      .text-consta {
+        h2 {
+          max-width: 400px;
+          @include font-32;
+          color: var(--font-color);
+        }
+      }
+
+      .flex-box {
+        display: flex;
+        gap: 20px;
+        overflow-x: scroll;
+
+        .text-box {
+          min-width: 300px;
+          margin-top: 50px;
+
+          p {
+            @include font-18;
+            color: var(--font-color);
+          }
+
+          span {
+            padding-top: 20px;
+            max-width: 325px;
+            display: block;
+            color: var(--font-color);
+          }
+        }
+      }
+
+      p {
+        margin-top: 40px;
+        @include font-16;
+        color: var(--font-color);
+      }
+    }
+  }
+}

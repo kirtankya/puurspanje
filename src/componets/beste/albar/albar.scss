@@ -1,0 +1,218 @@
+@import "../../../sass/global.scss";
+
+.albar-main {
+  padding: 60px 40px;
+
+  .flex-albar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+
+    .text-albar {
+      h2 {
+        @include font-24;
+        font-weight: 500;
+      }
+
+      p {
+        padding-top: 30px;
+        @include font-16;
+        max-width: 500px;
+      }
+
+      span {
+        @include font-16;
+        max-width: 500px;
+        display: block;
+        padding-top: 30px;
+      }
+    }
+
+    .images-alba {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .flex-albar-main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    h2 {
+      @include font-32;
+      font-weight: 500;
+    }
+    p {
+      @include font-18;
+      max-width: 550px;
+    }
+  }
+  .flex-albar-main-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 40px;
+    .text-albar-main-1 {
+      p {
+        @include font-18;
+        font-weight: 500;
+      }
+      .span {
+        display: block;
+        padding-top: 20px;
+        @include font-16;
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .albar-main {
+    padding: 40px 20px;
+
+    .flex-albar {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 20px;
+
+      .text-albar {
+        h2 {
+          @include font-20;
+          font-weight: 500;
+        }
+
+        p {
+          padding-top: 30px;
+          @include font-14;
+          max-width: 500px;
+        }
+
+        span {
+          @include font-14;
+          max-width: 500px;
+          display: block;
+          padding-top: 30px;
+        }
+      }
+
+      .image-alba {
+        width: 100%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+    .flex-albar-main {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 30px;
+      h2 {
+        min-width: 400px;
+        @include font-24;
+        font-weight: 500;
+      }
+      p {
+        @include font-14;
+        max-width: 450px;
+      }
+    }
+    .flex-albar-main-1 {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 40px;
+      .text-albar-main-1 {
+        p {
+          @include font-18;
+          font-weight: 500;
+        }
+        .span {
+          display: block;
+          padding-top: 20px;
+          @include font-16;
+          max-width: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .albar-main {
+    padding: 40px 20px;
+
+    .flex-albar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .text-albar {
+        min-width: 100%;
+
+        h2 {
+          @include font-20;
+          font-weight: 500;
+        }
+
+        p {
+          padding-top: 30px;
+          @include font-14;
+          max-width: 500px;
+        }
+
+        span {
+          @include font-14;
+          max-width: 500px;
+          display: block;
+          padding-top: 30px;
+        }
+      }
+
+      .image-alba {
+        width: 100%;
+
+        img {
+          min-width: 100%;
+          height: 300px;
+        }
+      }
+    }
+    .flex-albar-main {
+      display: flex;
+      flex-direction: column;
+      padding-top: 30px;
+      h2 {
+        min-width: 400px;
+        @include font-24;
+        font-weight: 500;
+      }
+      p {
+        padding-top: 20px;
+        @include font-14;
+        max-width: 450px;
+      }
+    }
+    .flex-albar-main-1 {
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+      .text-albar-main-1 {
+        p {
+          @include font-18;
+          font-weight: 500;
+        }
+        .span {
+          display: block;
+          padding-top: 20px;
+          @include font-16;
+          max-width: 500px;
+        }
+      }
+    }
+  }
+}

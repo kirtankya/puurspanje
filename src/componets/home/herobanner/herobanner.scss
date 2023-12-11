@@ -1,0 +1,473 @@
+@import "../../../sass/global.scss";
+
+.herobanner-background {
+  padding: 60px;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/banner.png);
+  background-size: cover;
+
+  .text {
+    h2 {
+      @include font-48;
+      color: var(--font-color);
+    }
+  }
+
+  p {
+    max-width: 400px;
+    color: var(--font-color);
+    @include font-18;
+    padding-top: 20px;
+  }
+
+  .search_box {
+    margin-top: 20px;
+    max-width: max-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--bg-color-white);
+
+    .main-flex-itme {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .containe {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        span {
+          display: block;
+          @include font-16;
+          color: #000;
+          padding: 0px;
+          padding-top: 5px;
+        }
+
+        .flex-containe {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+
+          p {
+            @include font-18;
+            font-weight: 600;
+            color: #000;
+            padding-top: 5px;
+          }
+
+          .icon-down {
+            font-size: 16px;
+            font-weight: 600;
+            padding-top: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .containe-1 {
+        display: flex;
+        gap: 50px;
+
+        span {
+          display: block;
+          @include font-16;
+          color: #000;
+          padding: 0px;
+        }
+
+        .flex-containe {
+          display: flex;
+          align-items: center;
+          gap: 50px;
+
+          p {
+            @include font-18;
+            font-weight: 600;
+            color: var(--color-black);
+            padding-top: 5px;
+          }
+
+          .icon-down {
+            font-size: 16px;
+            font-weight: 600;
+            padding-top: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+      .button-flex {
+        display: flex;
+        gap: 20px;
+        .button-1 {
+          .button {
+            button {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              border: 2px solid #f3f4f5;
+              padding: 10px 30px;
+
+              // background-color: var(--button-bg-color);
+              .icon-filter {
+                font-size: 30px;
+                border-radius: 10px;
+                font-weight: 600;
+                padding-top: 10px;
+              }
+
+              p {
+                color: var(--color-black);
+                padding-bottom: 10px;
+                // display: none;
+              }
+            }
+          }
+        }
+
+        .button-2 {
+          .button {
+            button {
+              // display: flex;
+              // gap: 20px;
+              // justify-content: center;
+              padding: 10px 30px;
+              background-color: var(--button-bg-color);
+
+              .icon-search {
+                display: none;
+                font-size: 25px;
+                border-radius: 10px;
+                color: var(--font-color);
+                font-weight: 600;
+                padding-top: 15px;
+              }
+
+              p {
+                color: var(--font-color);
+                padding-bottom: 12px;
+                // display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .herobanner-background {
+    padding: 30px 25px;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/banner.png);
+    background-size: cover;
+
+    .text {
+      h2 {
+        @include font-32;
+        color: var(--font-color);
+      }
+    }
+
+    p {
+      max-width: 400px;
+      color: var(--font-color);
+      @include font-16;
+      padding-top: 20px;
+    }
+
+    .search_box {
+      margin-top: 20px;
+      max-width: max-content;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: var(--bg-color-white);
+
+      .main-flex-itme {
+        display: flex;
+        gap: 20px;
+
+        .containe {
+          span {
+            display: block;
+            @include font-18;
+            color: #000;
+            padding: 0px;
+          }
+
+          .flex-containe {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            p {
+              @include font-16;
+              font-weight: 600;
+              color: #000;
+              padding-top: 5px;
+            }
+
+            .icon-down {
+              font-size: 16px;
+              font-weight: 600;
+              padding-top: 5px;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .containe-1 {
+          display: flex;
+          gap: 30px;
+
+          span {
+            display: block;
+            @include font-16;
+            color: #000;
+            padding: 0px;
+          }
+
+          .flex-containe {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            p {
+              @include font-18;
+              font-weight: 600;
+              color: var(--color-black);
+              padding-top: 5px;
+            }
+
+            .icon-down {
+              font-size: 16px;
+              font-weight: 600;
+              padding-top: 5px;
+              cursor: pointer;
+            }
+          }
+        }
+        .button-flex {
+          display: flex;
+          gap: 20px;
+          .button-1 {
+            .button {
+              button {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                border: 2px solid #f3f4f5;
+                padding: 10px 30px;
+
+                // background-color: var(--button-bg-color);
+                .icon-filter {
+                  font-size: 44px;
+                  border-radius: 10px;
+                  font-weight: 600;
+                  padding-top: 10px;
+                }
+
+                p {
+                  display: none;
+                  color: var(--color-black);
+                  padding-bottom: 10px;
+                  // display: none;
+                }
+              }
+            }
+          }
+
+          .button-2 {
+            .button {
+              button {
+                // display: flex;
+                // gap: 20px;
+                // justify-content: center;
+                padding: 12px 30px;
+                background-color: var(--button-bg-color);
+
+                .icon-search {
+                  display: block;
+                  font-size: 25px;
+                  border-radius: 10px;
+                  color: var(--font-color);
+                  font-weight: 600;
+                  padding-bottom: 15px;
+                }
+
+                p {
+                  display: none;
+                  color: var(--font-color);
+                  padding-bottom: 12px;
+                  // display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .herobanner-background {
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/banner.png);
+    background-size: cover;
+
+    .text {
+      h2 {
+        @include font-32;
+        color: var(--font-color);
+      }
+    }
+
+    p {
+      max-width: 400px;
+      color: var(--font-color);
+      @include font-18;
+      padding-top: 20px;
+    }
+
+    .search_box {
+      margin-top: 20px;
+      max-width: 80%;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: var(--bg-color-white);
+
+      .main-flex-itme {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .containe {
+          padding-bottom: 10px;
+          border-bottom: 1px solid #000;
+
+          span {
+            display: block;
+            @include font-16;
+            color: #000;
+            padding: 0px;
+          }
+
+          .flex-containe {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            p {
+              @include font-18;
+              font-weight: 600;
+              color: var(--color-black);
+              padding-top: 5px;
+            }
+
+            .icon-down {
+              font-size: 16px;
+              font-weight: 600;
+              padding-top: 5px;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .containe-1 {
+          display: flex;
+          gap: 20px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid var(--color-black);
+
+          span {
+            display: block;
+            @include font-16;
+            color: var(--color-black);
+            padding: 0px;
+          }
+
+          .flex-containe {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            p {
+              @include font-18;
+              font-weight: 600;
+              color: var(--color-black);
+              padding-top: 5px;
+            }
+
+            .icon-down {
+              font-size: 16px;
+              font-weight: 600;
+              padding-top: 5px;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .button-1 {
+          .button {
+            button {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              gap: 20px;
+              padding-left: 20px;
+              align-items: center;
+              border: 2px solid #f3f4f5;
+
+              // background-color: var(--button-bg-color);
+              .icon-filter {
+                font-size: 25px;
+                border-radius: 10px;
+                font-weight: 600;
+                padding-top: 10px;
+              }
+
+              p {
+                display: block;
+                color: var(--color-black);
+                @include font-18;
+                padding-bottom: 10px;
+              }
+            }
+          }
+        }
+
+        .button-2 {
+          .button {
+            button {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 20px;
+              padding: 12px 23px;
+              background-color: var(--button-bg-color);
+
+              .icon-search {
+                font-size: 25px;
+                border-radius: 10px;
+                color: var(--font-color);
+                font-weight: 600;
+                padding-top: 10px;
+              }
+
+              p {
+                display: block;
+                color: #fff;
+                @include font-18;
+                padding-bottom: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

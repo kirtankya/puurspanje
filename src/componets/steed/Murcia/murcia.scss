@@ -1,0 +1,310 @@
+@import "../../../sass/global.scss";
+
+.murcia-background {
+  padding: 60px;
+
+  .image-flex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+  .text-murcia {
+    padding-top: 70px;
+    h2 {
+      @include font-24;
+      font-weight: 500;
+    }
+    p {
+      padding-top: 20px;
+      max-width: 647px;
+      @include font-16;
+    }
+    .flex-text {
+      padding-top: 40px;
+      display: flex;
+      gap: 10px;
+      span {
+        display: block;
+        @include font-14;
+        color: var(--color-gray);
+      }
+      a {
+        color: var(--color-blue);
+        @include font-14;
+      }
+    }
+  }
+  h2 {
+    padding-top: 50px;
+    @include font-24;
+    font-weight: 500;
+  }
+  .card-flex {
+    display: flex;
+    gap: 20px;
+    .flex-items {
+      display: flex;
+      gap: 20px;
+      .card {
+        width: 100%;
+        .image {
+          margin: 20px 0px 0px 0px;
+          img {
+            width: 400px;
+          }
+        }
+        p {
+          padding-top: 20px;
+          max-width: 360px;
+          @include font-20;
+          font-weight: 600;
+        }
+        span {
+          @include font-16;
+          color: var(--color-dark);
+        }
+      }
+    }
+    .card-1 {
+      width: 100% !important;
+      h2 {
+        @include font-20;
+        font-weight: 500;
+      }
+      p {
+        padding-top: 20px;
+        max-width: 360px;
+        @include font-20;
+        font-weight: 600;
+      }
+      h5 {
+        padding-top: 10px;
+        @include font-16;
+        max-width: 287px;
+      }
+      .button-black {
+        .button {
+          button {
+            margin-top: 20px;
+            background-color: var(--background-color);
+            color: var(--font-color);
+            padding: 12px 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .murcia-background {
+    padding: 60px 40px;
+
+    .image-flex {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+      img {
+        max-width: 600px !important;
+        height: 500px;
+        object-fit: cover;
+      }
+    }
+    .text-murcia {
+      padding-top: 70px;
+      h2 {
+        @include font-24;
+        font-weight: 500;
+      }
+      p {
+        padding-top: 20px;
+        max-width: 647px;
+        @include font-16;
+      }
+      .flex-text {
+        padding-top: 40px;
+        display: flex;
+        gap: 10px;
+        span {
+          display: block;
+          @include font-14;
+          color: var(--color-gray);
+        }
+        a {
+          color: var(--color-blue);
+          @include font-14;
+        }
+      }
+    }
+    .card-flex {
+      display: flex;
+      gap: 20px;
+      .flex-items {
+        display: flex;
+        gap: 20px;
+        .card {
+          width: 100%;
+          .image {
+            margin: 20px 0px 0px 0px;
+            img {
+              width: 100%;
+            }
+          }
+          p {
+            padding-top: 20px;
+            max-width: 360px;
+            @include font-20;
+            font-weight: 600;
+          }
+          span {
+            @include font-16;
+            color: var(--color-dark);
+          }
+        }
+      }
+      .card-1 {
+        width: 100% !important;
+        h2 {
+          @include font-20;
+          font-weight: 500;
+        }
+        p {
+          padding-top: 20px;
+          max-width: 360px;
+          @include font-20;
+          font-weight: 600;
+        }
+        h5 {
+          padding-top: 10px;
+          @include font-16;
+          max-width: 287px;
+        }
+        .button-black {
+          .button {
+            button {
+              margin-top: 20px;
+              background-color: var(--background-color);
+              color: var(--font-color);
+              padding: 12px 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .murcia-background {
+    padding: 40px;
+
+    .image-flex {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      overflow-x: auto;
+
+      img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+      }
+    }
+    .text-murcia {
+      width: 100%;
+      padding-top: 70px;
+      h2 {
+        @include font-24;
+        font-weight: 500;
+      }
+      p {
+        padding-top: 20px;
+        max-width: 647px;
+        @include font-16;
+      }
+      .flex-text {
+        padding-top: 40px;
+        display: flex;
+        gap: 10px;
+        span {
+          display: block;
+          @include font-14;
+          color: var(--color-gray);
+        }
+        a {
+          color: var(--color-blue);
+          @include font-14;
+        }
+      }
+    }
+    h2 {
+      padding-top: 50px;
+      @include font-24;
+      font-weight: 500;
+    }
+    .card-flex {
+      display: flex;
+      gap: 20px;
+
+      .flex-items {
+        overflow-x: auto;
+        display: flex;
+        gap: 20px;
+        .card {
+          min-width: 100%;
+          .image {
+            margin: 20px 0px 0px 0px;
+            img {
+              width: 100%;
+            }
+          }
+          p {
+            padding-top: 20px;
+            max-width: 360px;
+            @include font-20;
+            font-weight: 600;
+          }
+          span {
+            @include font-16;
+            color: var(--color-dark);
+          }
+        }
+      }
+      .card-1 {
+        width: 100% !important;
+        h2 {
+          @include font-20;
+          font-weight: 500;
+        }
+        p {
+          padding-top: 20px;
+          max-width: 360px;
+          @include font-20;
+          font-weight: 600;
+        }
+        h5 {
+          padding-top: 10px;
+          @include font-16;
+          max-width: 287px;
+        }
+        .button-black {
+          .button {
+            button {
+              margin-top: 20px;
+              background-color: var(--background-color);
+              color: var(--font-color);
+              padding: 12px 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

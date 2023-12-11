@@ -1,0 +1,237 @@
+@import "../../../sass/global.scss";
+
+.contact-background {
+  padding: 60px;
+
+  .flex-contact {
+    display: flex;
+    gap: 20px;
+
+    .contct-box {
+      width: 100%;
+
+      h2 {
+        @include font-48;
+      }
+
+      p {
+        @include font-18;
+        max-width: 430px;
+        padding-top: 20px;
+      }
+
+      .flex-icon {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+          width: 30px;
+          object-fit: contain;
+          padding-top: 15px;
+        }
+
+        p {
+          @include font-18;
+        }
+
+        .text-icon {
+          @include font-18;
+          max-width: 350px;
+        }
+      }
+    }
+
+    .box-contact {
+      padding: 30px;
+      box-shadow: 0px 0px 10px 0px;
+
+      p {
+        @include font-20;
+        font-weight: 600;
+      }
+
+      span {
+        display: block;
+        padding-top: 20px;
+        @include font-16;
+        max-width: 400px;
+      }
+
+      h3 {
+        @include font-16;
+        font-weight: 600;
+      }
+
+      .text-span {
+        max-width: 500px;
+        @include font-16;
+      }
+    }
+  }
+
+  .map {
+    margin-top: 30px;
+    width: 700px;
+    height: 500px;
+    border: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-background {
+    padding: 60px 40px;
+
+    .flex-contact {
+      display: flex;
+      gap: 20px;
+
+      .contct-box {
+        width: 100%;
+
+        h2 {
+          @include font-48;
+        }
+
+        p {
+          @include font-18;
+          max-width: 430px;
+          padding-top: 20px;
+        }
+
+        .flex-icon {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          img {
+            width: 30px;
+            object-fit: contain;
+            padding-top: 15px;
+          }
+
+          p {
+            @include font-18;
+          }
+
+          .text-icon {
+            @include font-18;
+            max-width: 350px;
+          }
+        }
+      }
+
+      .box-contact {
+        padding: 30px;
+        box-shadow: 0px 0px 10px 0px;
+
+        p {
+          @include font-20;
+          font-weight: 600;
+        }
+
+        span {
+          display: block;
+          padding-top: 20px;
+          @include font-16;
+          max-width: 400px;
+        }
+
+        h3 {
+          @include font-16;
+          font-weight: 600;
+        }
+
+        .text-span {
+          max-width: 500px;
+          @include font-16;
+        }
+      }
+    }
+    .map {
+      margin-top: 30px;
+      width: 400px;
+      height: 500px;
+      border: 0;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .contact-background {
+    padding: 40px 20px;
+
+    .flex-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .contct-box {
+        width: 100%;
+
+        h2 {
+          @include font-48;
+        }
+
+        p {
+          @include font-18;
+          max-width: 430px;
+          padding-top: 20px;
+        }
+
+        .flex-icon {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          img {
+            width: 30px;
+            object-fit: contain;
+            padding-top: 15px;
+          }
+
+          p {
+            @include font-18;
+          }
+
+          .text-icon {
+            @include font-18;
+            max-width: 350px;
+          }
+        }
+      }
+
+      .box-contact {
+        padding: 30px;
+        box-shadow: 0px 0px 10px 0px;
+
+        p {
+          @include font-20;
+          font-weight: 600;
+        }
+
+        span {
+          display: block;
+          padding-top: 20px;
+          @include font-16;
+          max-width: 400px;
+        }
+
+        h3 {
+          @include font-16;
+          font-weight: 600;
+        }
+
+        .text-span {
+          max-width: 500px;
+          @include font-16;
+        }
+      }
+    }
+    .map {
+      margin-top: 30px;
+      width: 400px;
+      height: 500px;
+      border: 0;
+    }
+  }
+}
